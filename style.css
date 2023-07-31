@@ -1,0 +1,58 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.container {
+    min-width: 800px;
+    min-height: 400px;
+     margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    /* justify-content: space-around; */
+    justify-content: center;
+     /* Align Items Horizontally */
+    align-items: flex-start; /* Align Items Vertically */
+    /* gap: 1rem ; */
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+    /* flex-direction: row-reverse; */
+    /* Shorthand for flex-direction and flex-wrap */
+    flex-flow: row wrap;
+}
+
+.box {
+    min-height: 100px;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+
+    display: flex;
+    justify-content: center;
+    
+        align-items: center;
+}
+
+/* .box:nth-child(3) {
+    background-color: blueviolet;
+} */
+
+/* .box:first-child {
+    flex-grow: 1
+} */
+
+.box:nth-child(even) {
+    background-color: brown;
+}
+
+.box:not(:first-child):hover {
+    background-color: aqua;
+}
+
